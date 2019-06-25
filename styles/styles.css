@@ -1,0 +1,72 @@
+:root {
+--main-bg-color: #ffff;
+--accent-bg-color: #fbfafa;
+--main-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+--main-font-color:#000;
+--accent-font-color:#555559;
+}
+* {
+margin: 0;
+padding: 0;
+font-family: var(--main-font-family)
+}
+.menu{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 480px;
+    background-color: var(--main-bg-color);
+    font-size: larger;
+    font-weight: 400;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 37px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.header-image{
+    position: fixed;
+    top: 0;
+    height: 500px;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), 20%, rgba(255, 255, 255, 0)),
+    url('/images/header.jpg');
+}
+.insta{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+.information{
+    height: 720px;
+    background-color: var(--accent-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information img{
+    width: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.information p{
+    font-size: 2rem;
+}
+.information button{
+    margin-top: 30px;
+    margin-bottom: 170px;
+}
