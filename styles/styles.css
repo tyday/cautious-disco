@@ -2,8 +2,10 @@
 --main-bg-color: #ffff;
 --accent-bg-color: #fbfafa;
 --main-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+--accent-font-family: 'Open Sans',Calibri, sans-serif;
 --main-font-color:#000;
 --accent-font-color:#555559;
+--accent-color: #286782;
 }
 * {
 margin: 0;
@@ -19,6 +21,10 @@ font-family: var(--main-font-family)
     background-color: var(--main-bg-color);
     font-size: larger;
     font-weight: 400;
+    overflow: hidden;
+}
+.placeholder{
+    height: 480px;
 }
 .menu ul{
     display: flex;
@@ -64,9 +70,102 @@ font-family: var(--main-font-family)
     margin-bottom: 30px;
 }
 .information p{
-    font-size: 2rem;
+    font-size: 57.6px;
+    font-family: var(--accent-font-family);
+    font-weight: 100;
+    color: var(--accent-font-color);
+    padding: 0 100px;
+    text-align: center;
+    max-width: 900px;
 }
 .information button{
+    font-size: 22.4px;
     margin-top: 30px;
     margin-bottom: 170px;
+    background-color: var(--accent-color);
+    color: var(--accent-bg-color);
+    padding: 24px 40px;
+    font-family: var(--accent-font-family);
+    border-radius: 8px;
+    border: none;
 }
+.description{
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+.description div{    
+    flex: 0 0 50%;
+}
+.description-image img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+.description-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.description-text >*{
+    padding: 0 10vw;
+}
+.description-text ul{
+    list-style-image: url('/images/dash.svg');
+    margin-bottom: 24px;
+}
+.description-text ul li{
+    font-family: var(--accent-font-family);
+    font-size: 26px;
+    font-weight: 700;
+}
+.description-text p{
+    font-size: 19px;
+    font-weight: 100;
+}
+footer{
+    background-color: var(--accent-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer-contact-info{
+    display: flex;
+}
+.footer-contact-info div{
+    padding: 0 10px;
+}
+.display-only-small{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .description{
+        /* display: flex; */
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .description-text{
+        padding-bottom: 10px;
+    }
+    .description:last-of-type{
+        padding-bottom: 0;
+    }
+    .display-only-large{
+        display: none;
+    }
+    .display-only-small{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .footer-contact-info{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+  }
