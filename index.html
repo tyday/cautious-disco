@@ -7,6 +7,7 @@
     <title>Dirty Dogs</title>
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -15,10 +16,10 @@
             <div class="insta"><img src="/images/insta.png" alt="">#hotdogs</div>
         
         </div>
-        <!-- <div class="placeholder"></div> -->
     </header>
         <div class="menu">
-            <ul>
+            <button class="display-only-small" id="menu-small"><i class="fa fa-bars"></i></button>
+            <ul class="display-none-toggle">
                 <li><a href="#">MENU</a></li>
                 <li><a href="#">CATERING</a></li>
                 <li><a href="#">ABOUT US</a></li>
@@ -61,7 +62,9 @@
     <footer>
         <div>&reg; 2016 Dirty Dogs all rights reserved</div>
         <div class="footer-contact-info">
-            <div>274 Marconi Blvd. Columbus, Ohio 43215</div>
+            <div class="display-only-large">274 Marconi Blvd. Columbus, Ohio 43215</div>
+            <div class="display-only-small">274 Marconi Blvd.</div>
+            <div class="display-only-small">Columbus, Ohio 43215</div>
             <div class="display-only-large">&#124;</div>
             <div>614.538.0095</div>
             <div class="display-only-large">&#124;</div>
@@ -70,3 +73,4 @@
     </footer>
 </body>
 </html>
+<script src="/scripts/main.js"></script>
